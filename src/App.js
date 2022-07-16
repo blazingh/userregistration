@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Profile from "./Profile";
+import SignIn from "./SignIn";
+import SignUp from "./SignUp";
+import Uploader from "./Uploader";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="flex flex-wrap items-center justify-center">
+			<div className="w-full h-full max-w-md mx-10 my-5">
+				<Profile />
+			</div>
+			<div className="w-full h-full max-w-md mx-10 my-5">
+				<SignIn />
+			</div>
+			<div className="w-full h-full max-w-md mx-10 my-5">
+				<SignUp />
+			</div>
+		</div>
+	);
 }
 
 export default App;
