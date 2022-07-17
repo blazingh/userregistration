@@ -2,8 +2,6 @@ import axios from "axios";
 import { useState } from "react";
 
 const SignIn = () => {
-	axios.defaults.crossDomain = true;
-	axios.defaults.withCredentials = true;
 	const [email, setEmail] = useState("");
 	const [password, setPasword] = useState("");
 	const labelClass =
