@@ -5,3 +5,7 @@
 body {
 	@apply bg-dark;
 }
+
+.page-container {
+	@apply bg-purp text-white w-full max-w-xl rounded-md mx-auto px-3 md:px-8 py-8 mt-5 shadow-lg;
+}

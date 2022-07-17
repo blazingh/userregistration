@@ -1,19 +1,25 @@
-import Profile from "./Profile";
-import SignIn from "./SignIn";
-import SignUp from "./SignUp";
+import { useContext } from "react";
+import Profile from "./pages/Profile";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import { userContext } from "./contexts/userContext";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
+	const { user, setUser } = useContext(userContext);
+	console.log(user);
 	return (
-		<div className="flex flex-wrap items-center justify-center">
-			<div className="w-full h-full max-w-md mx-2 lg:mx-5 my-5">
-				<Profile />
-			</div>
-			<div className="w-full h-full max-w-md mx-2 lg:mx-5 my-5">
-				<SignIn />
-			</div>
-			<div className="w-full h-full max-w-md mx-2 lg:mx-5 my-5">
-				<SignUp />
-			</div>
+		<div className="px-5">
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/signin" element={<SignIn />} />
+					<Route path="/signup" element={<SignUp />} />
+					<Route path="/signout" element={<SignIn />} />
+					<Route path="/profile" element={<Profile />} />
+				</Routes>
+			</BrowserRouter>
 		</div>
 	);
 }
