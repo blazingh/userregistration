@@ -2,10 +2,31 @@ import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Quotes from "../items/Quotes";
 import { userContext } from "../contexts/userContext";
+import axios from "axios";
 
 const Profile = ({}) => {
 	let navigate = useNavigate();
 	const { user, setUser } = useContext(userContext);
+	const handleSubmit = () => {
+		axios
+			.post(
+				"https://hadiball-server.herokuapp.com/user/signout",
+				{},
+				{
+					withCredentials: true,
+				},
+			)
+			.then((res) => {
+				if (res.data?.error) {
+					return;
+				}
+				setUser();
+				navigate("/");
+			})
+			.catch((err) => {
+				return;
+			});
+	};
 	return (
 		<div className="page-container relative flex flex-col justify-center items-center ">
 			{!user && (
@@ -30,10 +51,7 @@ const Profile = ({}) => {
 			</Link>
 			<label
 				className=" absolute bottom-10 right-10 text-sm underline hover:text-org"
-				onClick={() => {
-					setUser();
-					navigate("/");
-				}}
+				onClick={handleSubmit}
 			>
 				Sign Out
 			</label>

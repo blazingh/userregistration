@@ -30,9 +30,10 @@ const ProfileEdit = () => {
 					setLoading(false);
 					return;
 				}
+				setPasword("");
 				setUpdated(true);
-				setUser(res.data);
 				setLoading(false);
+				setUser(res.data);
 			})
 			.catch((err) => {
 				setError("Network Error");
@@ -103,7 +104,7 @@ const ProfileEdit = () => {
 				<label className={labelClass}>Password</label>
 			</div>
 			<label className="text-xs w-full text-center">
-				leave empty if you want it unchanged
+				leave password empty if you want it unchanged
 			</label>
 			{updated && (
 				<label className="mt-5 text-green-400 w-full max-w-sm">
