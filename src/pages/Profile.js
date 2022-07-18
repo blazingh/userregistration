@@ -22,9 +22,12 @@ const Profile = ({}) => {
 				Welcome {user ? user.fullName : "unkown"}
 			</label>
 			<Quotes reload={true} />
-			<button className=" border-2 border-white py-1 px-3 rounded-sm hover:text-org hover:border-org mt-7">
+			<Link
+				to="/profile/edit"
+				className=" border-2 border-white py-1 px-3 rounded-sm hover:text-org hover:border-org mt-7"
+			>
 				Edit Profile
-			</button>
+			</Link>
 			<label
 				className=" absolute bottom-10 right-10 text-sm underline hover:text-org"
 				onClick={() => {

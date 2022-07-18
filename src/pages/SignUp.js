@@ -27,13 +27,11 @@ const SignUp = () => {
 					setLoading(false);
 					return;
 				}
-				console.log(res);
 				setUser(res.data);
 				setLoading(false);
 			})
 			.catch((err) => {
 				setError("Network Error");
-				console.log(err);
 				setLoading(false);
 			});
 	};
