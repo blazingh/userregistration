@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+### A user regestartion site demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Sign-up andsign-in capabilities
+- user data saved in  a mongodb database
+- passwords are encrypted with
+- private page for usersD/CMD (Require.js & Sea.js) Module Loader, and Custom/define editor plugins;
 
-## Available Scripts
+# how to start
 
-In the project directory, you can run:
+most of the work is done in the back-end server this repo is only the front-end
 
-### `npm start`
+site demo : https://userregistration.vercel.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1) visit the site and press the sign up button
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![image](https://user-images.githubusercontent.com/8129122/180623602-6bead495-830b-4ab0-9c7f-e526a6ac0117.png)
 
-### `npm test`
+2) enter your info (passwords are encrypted)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](https://user-images.githubusercontent.com/8129122/180623615-7b2853f3-5db8-4eff-8e1b-7b546f5ba182.png)
 
-### `npm run build`
+3) wait a bit fro the backend to do its work and go to the profile page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://user-images.githubusercontent.com/8129122/180623627-76c8c45e-f195-443b-9b1f-e42d746715c3.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4) you can edit your account or logout
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![image](https://user-images.githubusercontent.com/8129122/180623641-351fe3cf-6ed6-45a1-b96f-89379b191e77.png)
 
-### `npm run eject`
+5) modify th einfo you need to change (leave password empty if you want it unchanged)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![image](https://user-images.githubusercontent.com/8129122/180623649-add2450f-f028-44d1-ba2e-a49e73956bf3.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6) to sign back in go to sign-up page and press the sign-in button
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![image](https://user-images.githubusercontent.com/8129122/180623660-624c5b29-5bb4-4ed6-b854-6ebeb6a88359.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![image](https://user-images.githubusercontent.com/8129122/180623670-d28913c0-e583-4406-b277-3fb47fa38c71.png)
 
-## Learn More
+7) enter your email and password and you are in back again
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![image](https://user-images.githubusercontent.com/8129122/180623699-fab9219c-b83c-42cf-a066-7c076ac30380.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+feel free to give your feedback about any issue or feuture
